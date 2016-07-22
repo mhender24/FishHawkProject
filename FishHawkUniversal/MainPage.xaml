@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="FishHawkUniversal.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FishHawkUniversal"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Width="810">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <CompositeTransform Rotation="-5.044"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="probeDepthLbl" HorizontalAlignment="Left" Height="40" Margin="85,165,0,0" TextWrapping="Wrap" Text="Probe Depth" VerticalAlignment="Top" Width="225" FontSize="24"/>
+        <TextBlock x:Name="surfaceTempLbl" HorizontalAlignment="Left" Height="70" Margin="85,245,0,0" TextWrapping="Wrap" Text="Surface Temperature" VerticalAlignment="Top" Width="225" FontSize="24"/>
+        <TextBlock x:Name="surfaceSpeedLbl" HorizontalAlignment="Left" Height="40" Margin="85,320,0,0" TextWrapping="Wrap" Text="Surface Speed" VerticalAlignment="Top" Width="225" FontSize="24"/>
+        <TextBlock x:Name="probeTempLbl" HorizontalAlignment="Left" Height="60" Margin="85,400,0,0" TextWrapping="Wrap" Text="Probe Temperature" VerticalAlignment="Top" Width="225" FontSize="24"/>
+        <TextBlock x:Name="probeSpeedLbl" HorizontalAlignment="Left" Height="45" Margin="85,485,0,0" TextWrapping="Wrap" Text="Probe Speed" VerticalAlignment="Top" Width="225" FontSize="24" RenderTransformOrigin="0.536,-1"/>
+        <TextBox x:Name="probeDepthBox" HorizontalAlignment="Left" Height="40" Margin="405,165,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="240" IsReadOnly="True" FontSize="26.667"/>
+        <TextBox x:Name="surfaceTempBox" HorizontalAlignment="Left" Height="45" Margin="405,245,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="240" IsReadOnly="True" FontSize="26.667"/>
+        <TextBox x:Name="surfaceSpeedBox" HorizontalAlignment="Left" Height="40" Margin="405,320,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="240" IsReadOnly="True" FontSize="26.667"/>
+        <TextBox x:Name="probeTempBox" HorizontalAlignment="Left" Height="35" Margin="405,400,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="240" IsReadOnly="True" FontSize="26.667"/>
+        <TextBox x:Name="probeSpeedBox" HorizontalAlignment="Left" Height="25" Margin="405,485,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="240" IsReadOnly="True" FontSize="26.667"/>
+
+    </Grid>
+</Page>
